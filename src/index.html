@@ -1,3 +1,4 @@
+<!--#region head-->
 <!doctype html>
 <html lang="en">
   <head>
@@ -6,14 +7,121 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>Title</title>
+    <title>NA MU</title>
     <link
       rel="stylesheet"
-      href="./styles/main.scss"
+      href="./styles/style.scss"
     />
   </head>
-  <body>
-    <h1>Hello Mate Academy</h1>
-    <script src="scripts/main.js"></script>
+  <!--#endregion-->
+  <body class="page__body">
+    <header class="header">
+      <div class="container">
+        <div class="header__content">
+          <div class="top-bar">
+            <a
+              href="#"
+              class="top-bar__logo"
+            >
+              <img
+                src="images/icons_svg/logo.svg"
+                alt="NA MU"
+                width="55"
+                height="61"
+              />
+            </a>
+            <div class="top-bar__icons">
+              <a
+                href="#menu"
+                class="icon icon--menu"
+              ></a>
+            </div>
+            <div class="header__bottom">
+              <h1 class="header__title">
+                ХУДОЖНІЙ
+                <br/>
+                МУЗЕЙ
+              </h1>
+            </div>
+            <section class="ticket-section">
+              <div class="ticket-container">
+                <div class="ticket-row">
+                  <span>КВИТКИ</span>
+                  <span class="icon-buy"></span>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <aside
+      class="page__menu menu"
+      id="menu"
+    >
+      <div class="container">
+        <div class="top-bar menu__top">
+          <div class="top-bar__icons">
+            <a
+              href="#"
+              class="icon icon--close"
+            ></a>
+          </div>
+        </div>
+        <div class="menu__bottom">
+          <nav class="nav menu__nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a
+                  class="nav__link"
+                  href="#gallery"
+                >
+                  Галерея
+                </a>
+              </li>
+              <li class="nav__item">
+                <a
+                  class="nav__link"
+                  href="#events"
+                >
+                  Виставки та події
+                </a>
+              </li>
+              <li class="nav__item">
+                <a
+                  class="nav__link"
+                  href="#about us"
+                >
+                  Про Нас
+                </a>
+              </li>
+              <li class="nav__item">
+                <a
+                  class="nav__link"
+                  href="#contacts"
+                >
+                  Контакти
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="working-hours">
+          <h3>Графік роботи</h3>
+          <ul>
+            <li>12:00— 20:00 середа</li>
+            <li>12:00— 20:00 четвер</li>
+            <li>12:00 — 20:00 п’ятниця</li>
+            <li>11:00 — 19:00 субота</li>
+            <li>11:00 — 19:00 неділя</li>
+          </ul>
+          <p class="closed-days">Вихідні: понеділок, вівторок<br>
+            Каса припиняє роботу за 1 годину<br>
+            до закриття музею
+          </p>
+        </div>
+      </div>
+    </aside>
   </body>
 </html>

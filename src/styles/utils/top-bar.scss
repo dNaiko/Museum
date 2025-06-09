@@ -1,0 +1,14 @@
+.top-bar {
+  box-sizing: border-box;
+  padding: 9px 133px 0 132px;
+
+  @include content-padding-inline;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include on-tablet {
+    padding: 15px 154px 0 0;
+  }
+}
