@@ -1,0 +1,114 @@
+.menu {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: sticky;
+    padding-top: 27px;
+    z-index: 1;
+    background-color: #1A5A4C;
+    color: $menu-text-color;
+
+    @include content-padding-inline;
+
+    @include on-tablet {
+      display: flex;
+      flex-direction: column;
+      //justify-content: space-between;
+      align-items: flex-start;
+      gap: 30px;
+      padding-top: 39px;
+      height: fit-content;
+      padding: 40px;
+    }
+  }
+
+  &__icons {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 27px;
+    left: 20px;
+
+    @include on-tablet {
+      top: 39px;
+      left: 34px;
+    }
+
+    .icon--close {
+      background-image: url(/src/images/icons_svg/icon-close.svg);
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+  }
+
+  /*&__tablet-wrapper {
+    @include on-tablet {
+      position: relative;
+      //padding-left: 1px;
+    }
+  }*/
+
+  &__tablet {
+    @include on-tablet {
+      display: flex;
+      //flex-direction: row;
+      position: relative;
+    }
+  }
+
+  /*&__base {
+    @include on-tablet {
+      display: flex;
+      position: relative;
+    }*/
+
+    &__left {
+      @include on-tablet {
+        //display: flex;
+        //flex-direction: column;
+        //flex-direction: row;
+        //gap: 38px;
+        flex: 1;
+        padding-right: 38px;
+      }
+    }
+
+    &__right {
+      @include on-tablet {
+        flex: 0 0 50%;
+        display: flex;
+        flex-direction: column;
+        padding-left: 38px;
+        position: relative;
+
+        &::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 0;
+          height: 100%;
+          width: 1px;
+          background-color: #fff;
+        }
+      }
+    }
+  //}
+
+  &__border {
+    border: none;
+    height: 1px;
+    background: #FFFFFF80;
+    margin: 24px 0;
+
+    @include on-tablet {
+      display: block;
+      padding-left: 38px;
+      width: 1px;
+      min-height: 100%;
+    }
+  }
+}
